@@ -7,8 +7,21 @@
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+A construction safety workers website provides essential resources to ensure safety on construction sites. It typically includes:
+
+Training modules and certifications (e.g., OSHA).
+
+Safety guidelines, checklists, and PPE usage info.
+
+Incident reporting tools and emergency contacts.
+
+News and updates on safety standards.
+
+Forums or community sections for workers to share tips.
+
+Its goal is to educate, support compliance, and reduce workplace accidents.
+
+
 
 ## Deployment
 
