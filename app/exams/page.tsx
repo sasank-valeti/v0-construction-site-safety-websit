@@ -8,9 +8,19 @@ export default function ExamsPage() {
     <div className="flex flex-col min-h-screen">
       <header className="bg-yellow-500 border-b border-yellow-600">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
-            <HardHat className="h-8 w-8 text-black" />
-            <span className="font-bold text-xl text-black">SafetyFirst</span>
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative">
+              <div className="bg-black rounded-lg p-2">
+                <HardHat className="h-6 w-6 text-yellow-500" />
+              </div>
+              <div className="absolute -top-1 -right-1 bg-yellow-500 rounded-full w-3 h-3 flex items-center justify-center">
+                <Shield className="h-2 w-2 text-black" />
+              </div>
+            </div>
+            <div>
+              <span className="font-bold text-xl text-black">SafetyFirst</span>
+              <div className="text-xs text-black/70 font-medium">CONSTRUCTION SAFETY</div>
+            </div>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="font-medium text-black hover:text-yellow-800">
@@ -221,9 +231,19 @@ export default function ExamsPage() {
       <footer className="bg-black text-white py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <HardHat className="h-6 w-6 text-yellow-500" />
-              <span className="font-bold text-lg text-yellow-500">SafetyFirst</span>
+            <div className="flex items-center gap-3 mb-4 md:mb-0">
+              <div className="relative">
+                <div className="bg-yellow-500 rounded-lg p-2">
+                  <HardHat className="h-6 w-6 text-black" />
+                </div>
+                <div className="absolute -top-1 -right-1 bg-black rounded-full w-3 h-3 flex items-center justify-center">
+                  <Shield className="h-2 w-2 text-yellow-500" />
+                </div>
+              </div>
+              <div>
+                <span className="font-bold text-lg text-yellow-500">SafetyFirst</span>
+                <div className="text-xs text-gray-400 font-medium">CONSTRUCTION SAFETY</div>
+              </div>
             </div>
             <div className="flex gap-6">
               <Link href="/" className="text-gray-400 hover:text-yellow-500">

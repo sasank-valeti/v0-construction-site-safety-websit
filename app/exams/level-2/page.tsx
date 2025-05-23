@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
-import { HardHat, ArrowLeft, ArrowRight, Clock, CheckCircle, AlertTriangle } from "lucide-react"
+import { HardHat, ArrowLeft, ArrowRight, Clock, CheckCircle, AlertTriangle, Shield } from "lucide-react"
 
 // Sample questions for Level 2 exam
 const questions = [
@@ -119,9 +119,19 @@ export default function Level2Exam() {
     <div className="flex flex-col min-h-screen">
       <header className="bg-yellow-500 border-b border-yellow-600">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
-            <HardHat className="h-8 w-8 text-black" />
-            <span className="font-bold text-xl text-black">SafetyFirst</span>
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative">
+              <div className="bg-black rounded-lg p-2">
+                <HardHat className="h-6 w-6 text-yellow-500" />
+              </div>
+              <div className="absolute -top-1 -right-1 bg-yellow-500 rounded-full w-3 h-3 flex items-center justify-center">
+                <Shield className="h-2 w-2 text-black" />
+              </div>
+            </div>
+            <div>
+              <span className="font-bold text-xl text-black">SafetyFirst</span>
+              <div className="text-xs text-black/70 font-medium">CONSTRUCTION SAFETY</div>
+            </div>
           </Link>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 bg-yellow-600 text-white px-3 py-1 rounded-full">
@@ -263,9 +273,19 @@ export default function Level2Exam() {
       <footer className="bg-black text-white py-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <HardHat className="h-6 w-6 text-yellow-500" />
-              <span className="font-bold text-lg text-yellow-500">SafetyFirst</span>
+            <div className="flex items-center gap-3 mb-4 md:mb-0">
+              <div className="relative">
+                <div className="bg-yellow-500 rounded-lg p-2">
+                  <HardHat className="h-6 w-6 text-black" />
+                </div>
+                <div className="absolute -top-1 -right-1 bg-black rounded-full w-3 h-3 flex items-center justify-center">
+                  <Shield className="h-2 w-2 text-yellow-500" />
+                </div>
+              </div>
+              <div>
+                <span className="font-bold text-lg text-yellow-500">SafetyFirst</span>
+                <div className="text-xs text-gray-400 font-medium">CONSTRUCTION SAFETY</div>
+              </div>
             </div>
             <p className="text-gray-500 text-sm">© {new Date().getFullYear()} SafetyFirst. All rights reserved.</p>
           </div>
