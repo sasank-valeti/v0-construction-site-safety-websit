@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { HardHat, Shield, ArrowRight } from "lucide-react"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useTranslation } from "@/hooks/useTranslation"
+import { Footer } from "@/components/footer"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -93,13 +94,12 @@ export default function Home() {
             </div>
             <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-2xl">
               <Image
-                src="/images/construction-hero-new.png"
-                alt="Professional construction workers in safety gear working on a modern construction site with cranes and building structures"
+                src="/images/construction-safety-meeting.jpeg"
+                alt="Construction workers in safety meeting wearing hard hats and high-visibility vests discussing safety protocols on site"
                 fill
                 className="object-cover"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute bottom-4 left-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-medium">
                 {t("siteName")}
               </div>
@@ -146,14 +146,14 @@ export default function Home() {
               </div>
               <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/construction-team-safety.png"
-                  alt="Construction team in safety meeting discussing safety protocols with hard hats and safety vests"
+                  src="/images/ppe-infographic.webp"
+                  alt="Personal Protective Equipment infographic showing different safety gear including hard hat, hearing protection, eye protection, high visibility clothing, hand protection, fall protection harness, protective pants, and steel-toed boots"
                   fill
-                  className="object-cover"
+                  className="object-contain bg-white"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 <div className="absolute bottom-4 right-4 bg-black/80 text-white px-4 py-2 rounded-lg">
-                  <p className="text-sm font-medium">Safety Training in Action</p>
+                  <p className="text-sm font-medium">PPE Guide</p>
                 </div>
               </div>
             </div>
@@ -265,6 +265,8 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   )
 }

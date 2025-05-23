@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { HardHat, Shield, FileText, BookOpen, Hammer, HardDrive, FileCheck, Users } from "lucide-react"
+import { Footer } from "@/components/footer"
 
 export default function ResourcesPage() {
   return (
@@ -186,85 +187,7 @@ export default function ResourcesPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="relative">
-                  <div className="bg-yellow-500 rounded-lg p-2">
-                    <HardHat className="h-6 w-6 text-black" />
-                  </div>
-                  <div className="absolute -top-1 -right-1 bg-black rounded-full w-3 h-3 flex items-center justify-center">
-                    <Shield className="h-2 w-2 text-yellow-500" />
-                  </div>
-                </div>
-                <div>
-                  <span className="font-bold text-xl text-yellow-500">SafetyFirst</span>
-                  <div className="text-xs text-gray-400 font-medium">CONSTRUCTION SAFETY</div>
-                </div>
-              </div>
-              <p className="text-gray-400">
-                Ensuring construction site safety through comprehensive training and certification.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/" className="text-gray-400 hover:text-yellow-500">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/lessons" className="text-gray-400 hover:text-yellow-500">
-                    Lessons
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/exams" className="text-gray-400 hover:text-yellow-500">
-                    Exams
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/resources" className="text-gray-400 hover:text-yellow-500">
-                    Resources
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="text-gray-400 hover:text-yellow-500">
-                    About Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">Contact</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>123 Safety Street</li>
-                <li>Construction City, CS 12345</li>
-                <li>info@safetyfirst.com</li>
-                <li>(555) 123-4567</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-4">Subscribe</h3>
-              <p className="text-gray-400 mb-4">Stay updated with safety regulations and training opportunities.</p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="px-3 py-2 rounded bg-gray-800 text-white border border-gray-700 flex-grow"
-                />
-                <Button className="bg-yellow-500 text-black hover:bg-yellow-400">Subscribe</Button>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
-            <p>© {new Date().getFullYear()} SafetyFirst. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

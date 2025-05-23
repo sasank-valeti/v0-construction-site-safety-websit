@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
 import { HardHat, ArrowLeft, ArrowRight, Clock, CheckCircle, AlertTriangle, Shield } from "lucide-react"
+import { Footer } from "@/components/footer"
 
 // Sample questions for Level 2 exam
 const questions = [
@@ -270,27 +271,7 @@ export default function Level2Exam() {
         </div>
       </main>
 
-      <footer className="bg-black text-white py-6">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-3 mb-4 md:mb-0">
-              <div className="relative">
-                <div className="bg-yellow-500 rounded-lg p-2">
-                  <HardHat className="h-6 w-6 text-black" />
-                </div>
-                <div className="absolute -top-1 -right-1 bg-black rounded-full w-3 h-3 flex items-center justify-center">
-                  <Shield className="h-2 w-2 text-yellow-500" />
-                </div>
-              </div>
-              <div>
-                <span className="font-bold text-lg text-yellow-500">SafetyFirst</span>
-                <div className="text-xs text-gray-400 font-medium">CONSTRUCTION SAFETY</div>
-              </div>
-            </div>
-            <p className="text-gray-500 text-sm">© {new Date().getFullYear()} SafetyFirst. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

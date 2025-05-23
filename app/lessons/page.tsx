@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import { HardHat, Search, BookOpen, Clock, CheckCircle, ArrowRight, Shield } from "lucide-react"
+import { Footer } from "@/components/footer"
 
 // Mock data for lessons
 const lessonCategories = [
@@ -578,46 +579,7 @@ export default function LessonsPage() {
         </section>
       </main>
 
-      <footer className="bg-black text-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-3 mb-4 md:mb-0">
-              <div className="relative">
-                <div className="bg-yellow-500 rounded-lg p-2">
-                  <HardHat className="h-6 w-6 text-black" />
-                </div>
-                <div className="absolute -top-1 -right-1 bg-black rounded-full w-3 h-3 flex items-center justify-center">
-                  <Shield className="h-2 w-2 text-yellow-500" />
-                </div>
-              </div>
-              <div>
-                <span className="font-bold text-lg text-yellow-500">SafetyFirst</span>
-                <div className="text-xs text-gray-400 font-medium">CONSTRUCTION SAFETY</div>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <Link href="/" className="text-gray-400 hover:text-yellow-500">
-                Home
-              </Link>
-              <Link href="/lessons" className="text-gray-400 hover:text-yellow-500">
-                Lessons
-              </Link>
-              <Link href="/exams" className="text-gray-400 hover:text-yellow-500">
-                Exams
-              </Link>
-              <Link href="/resources" className="text-gray-400 hover:text-yellow-500">
-                Resources
-              </Link>
-              <Link href="/about" className="text-gray-400 hover:text-yellow-500">
-                About
-              </Link>
-            </div>
-            <p className="text-gray-500 text-sm mt-4 md:mt-0">
-              © {new Date().getFullYear()} SafetyFirst. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

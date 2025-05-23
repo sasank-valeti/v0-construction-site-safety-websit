@@ -61,6 +61,12 @@ export const translations = {
       score: "Score",
       duration: "Duration",
       level: "Level",
+      footer: {
+        contact: "Contact",
+        college: "Eastpoint College",
+        team: "Team Dominator",
+        rights: "All rights reserved.",
+      },
     },
   },
   hi: {
@@ -122,6 +128,12 @@ export const translations = {
       score: "स्कोर",
       duration: "अवधि",
       level: "स्तर",
+      footer: {
+        contact: "संपर्क",
+        college: "ईस्टपॉइंट कॉलेज",
+        team: "टीम डोमिनेटर",
+        rights: "सर्वाधिकार सुरक्षित।",
+      },
     },
   },
   ta: {
@@ -184,6 +196,12 @@ export const translations = {
       score: "மதிப்பெண்",
       duration: "கால அளவு",
       level: "நிலை",
+      footer: {
+        contact: "தொடர்பு",
+        college: "ஈஸ்ட்பாயிண்ட் கல்லூரி",
+        team: "டீம் டாமினேட்டர்",
+        rights: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+      },
     },
   },
   te: {
@@ -245,6 +263,12 @@ export const translations = {
       score: "స్కోర్",
       duration: "వ్యవధి",
       level: "స్థాయి",
+      footer: {
+        contact: "సంప్రదించండి",
+        college: "ఈస్ట్‌పాయింట్ కళాశాల",
+        team: "టీమ్ డామినేటర్",
+        rights: "అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.",
+      },
     },
   },
   kn: {
@@ -306,6 +330,12 @@ export const translations = {
       score: "ಅಂಕ",
       duration: "ಅವಧಿ",
       level: "ಹಂತ",
+      footer: {
+        contact: "ಸಂಪರ್ಕ",
+        college: "ಈಸ್ಟ್‌ಪಾಯಿಂಟ್ ಕಾಲೇಜು",
+        team: "ಟೀಮ್ ಡಾಮಿನೇಟರ್",
+        rights: "ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
+      },
     },
   },
 }
